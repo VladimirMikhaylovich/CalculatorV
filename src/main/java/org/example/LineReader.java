@@ -16,7 +16,6 @@ public class LineReader {
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
             String inputText = bufferedReader.readLine();
             if(inputText.length()>4 && inputText.length()<10){
-                //System.out.println(inputText);
                 char [] inputTextArray = inputText.toCharArray();
                 MakeVariables(inputTextArray);
 

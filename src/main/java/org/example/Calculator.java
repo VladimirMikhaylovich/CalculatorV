@@ -35,8 +35,8 @@ public class Calculator {
                     break;
                 case "-":
                     int result2 = a.getValue()-b.getValue();
-                    if(result2<0)
-                        throw new IllegalArgumentException();
+                    if(result2<0 || result2==0)
+                        throw new IllegalArgumentException("Результатом выражение должно быть значение больше нуля");
                     System.out.println(getRomanNumberByValue(result2));
                     break;
                 case "*":

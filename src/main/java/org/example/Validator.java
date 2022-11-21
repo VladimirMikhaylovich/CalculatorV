@@ -39,10 +39,9 @@ public class Validator {
             flagRoman = false;
         }
 
-      // System.out.println("validator");
         if (flagArabic == true) {
             s = "ARABIC";
-          //  System.out.println("validator Arabic true");
+
             return s;
         } else {
             if (flagRoman == true) {
@@ -51,7 +50,7 @@ public class Validator {
             }
         }
         s = "FAIL";
-      //  System.out.println("fail validator");
+
         return s;
     }
     public boolean validateSymbol(String s){
@@ -66,15 +65,5 @@ public class Validator {
             return true;
         return false;
     }
-
-
-    public boolean isFlagArabic() {
-        return flagArabic;
-    }
-
-    public boolean isFlagRoman() {
-        return flagRoman;
-    }
-
 
 }
